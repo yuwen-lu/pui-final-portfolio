@@ -37,7 +37,7 @@ export default function Projects() {
                                 description="Quantitative analysis on Work-related discussions on Twitter before/after COVID-19" 
                                 job="Quantitative Analysis Researcher" 
                                 time= "Target Venue: PLoS One 2021" 
-                                bgImage="/images/twitter-work-related-discussion.jpg"
+                                bgImage= {process.env.PUBLIC_URL + "/images/twitter-work-related-discussion.jpg"}
                             />
                         </Link>
                     </Col>
@@ -51,7 +51,7 @@ export default function Projects() {
                                 description="Qualitative analysis on Mask discussions on Twitter through the lens of Risk Perception" 
                                 job="Qualitative Analysis Researcher" 
                                 time= "Target Venue: PLoS One 2021" 
-                                bgImage="/images/twitter-mask-analysis.jpg"
+                                bgImage= {process.env.PUBLIC_URL + "/images/twitter-mask-analysis.jpg"}
                             />
                         </Link>
                     </Col>
@@ -75,7 +75,7 @@ export default function Projects() {
                             description="Personal iOS training APP for amateur goalkeepers with Augmented Reality and Machine Learning" 
                             job="iOS Developer, Usability Manager" 
                             time= "2019" 
-                            bgImage="/images/hit-ranger-icon.png"
+                            bgImage= {process.env.PUBLIC_URL + "/images/hit-ranger-icon.png"}
                             />
                         </Link>
                     </Col>
@@ -93,7 +93,7 @@ export default function Projects() {
                                 description="Mobilizing Crowdwork with Task Management Interfaces" 
                                 job="Developer" 
                                 time= "Target Venue: CSCW 2021" 
-                                bgImage="/images/goalplay-screenshot-homepage-lowres.png"
+                                bgImage= {process.env.PUBLIC_URL + "/images/goalplay-screenshot-homepage-lowres.png"}
                             />
                         </Link>
                     </Col>
@@ -113,7 +113,7 @@ export default function Projects() {
                                 description="Designing YouTube advertisement content to promote pro-social behaviors online" 
                                 job="Researcher" 
                                 time= "2020" 
-                                bgImage="/images/youtube-embeded-interface-design.png"
+                                bgImage= {process.env.PUBLIC_URL + "/images/youtube-embeded-interface-design.png"}
                             />
                         </Link>
                     </Col>

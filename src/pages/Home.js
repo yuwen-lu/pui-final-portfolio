@@ -63,22 +63,22 @@ export default function Home() {
                                         type: 'image',
                                         "image": [
                                             {
-                                                "src": "/icons/text-svg/behavioral-research.svg",
+                                                "src": process.env.PUBLIC_URL + "/icons/text-svg/behavioral-research.svg",
                                             },
                                             {
-                                                "src": "/icons/text-svg/user-centered-design.svg",
+                                                "src": process.env.PUBLIC_URL + "/icons/text-svg/user-centered-design.svg",
                                             },
                                             {
-                                                "src": "/icons/text-svg/design.svg",
+                                                "src": process.env.PUBLIC_URL + "/icons/text-svg/design.svg",
                                             },
                                             {
-                                                "src": "/icons/linkedin.svg",
+                                                "src": process.env.PUBLIC_URL + "/icons/linkedin.svg",
                                             },
                                             {
-                                                "src": "/icons/youtube.svg",
+                                                "src": process.env.PUBLIC_URL + "/icons/youtube.svg",
                                             },
                                             {
-                                                "src": "/icons/weibo.svg",
+                                                "src": process.env.PUBLIC_URL + "/icons/weibo.svg",
                                             },
                                         ]
                                     },
@@ -123,22 +123,22 @@ export default function Home() {
                                         type: 'image',
                                         "image": [
                                             {
-                                                "src": "/icons/github.svg",
+                                                "src": process.env.PUBLIC_URL + "/icons/github.svg",
                                             },
                                             {
-                                                "src": "/icons/twitter.svg",
+                                                "src": process.env.PUBLIC_URL + "/icons/twitter.svg",
                                             },
                                             {
-                                                "src": "/icons/instagram.svg",
+                                                "src": process.env.PUBLIC_URL + "/icons/instagram.svg",
                                             },
                                             {
-                                                "src": "/icons/linkedin.svg",
+                                                "src": process.env.PUBLIC_URL + "/icons/linkedin.svg",
                                             },
                                             {
-                                                "src": "/icons/youtube.svg",
+                                                "src": process.env.PUBLIC_URL + "/icons/youtube.svg",
                                             },
                                             {
-                                                "src": "/icons/weibo.svg",
+                                                "src": process.env.PUBLIC_URL + "/icons/weibo.svg",
                                             },
                                         ]
                                     },
