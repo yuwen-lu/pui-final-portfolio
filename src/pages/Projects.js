@@ -27,13 +27,11 @@ export default function Projects() {
                 {/* the p tag needs a container, otherwise the width of p tag would be the same as the parent tag */}
                 <div className="title-wrapper" style={titleWrapperStyle}><p className="title" style={projectTitleStyle}>Projects</p></div>
                 <Row className="project-card-wrapper" style={projectCardWrapperStyle}>
-                    <Col sm={12} lg={6} style={colStyle}>
+                    <Col sm={12} lg={6} 
+                        style={colStyle}>
                         <Link 
                             className="project-card-link" 
-                            to="/Goalplay" 
-                            data-aos="fade-up"
-                            data-aos-duration="1000"
-                            data-aos-easing="ease-in-out">
+                            to="/Goalplay">
                             <ProjectCard 
                                 title="Pre/Post COVID-19 Twitter Work-related Discussion Analysis" 
                                 description="Quantitative analysis on Work-related discussions on Twitter before/after COVID-19" 
@@ -43,14 +41,11 @@ export default function Projects() {
                             />
                         </Link>
                     </Col>
-                    <Col sm={12} lg={6} style={colStyle}>
+                    <Col sm={12} lg={6} 
+                        style={colStyle}>
                         <Link 
                             className="project-card-link" 
-                            to="/Goalplay"
-                            data-aos="fade-up"
-                            data-aos-duration="1000"
-                            data-aos-easing="ease-in-out"
-                            >
+                            to="/Goalplay">
                             <ProjectCard 
                                 title="COVID-19 Twitter Mask Analysis" 
                                 description="Qualitative analysis on Mask discussions on Twitter through the lens of Risk Perception" 
