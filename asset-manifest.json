@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/pui-final-portfolio/static/css/main.5c842bf6.chunk.css",
+    "main.js": "/pui-final-portfolio/static/js/main.60989b75.chunk.js",
+    "main.js.map": "/pui-final-portfolio/static/js/main.60989b75.chunk.js.map",
+    "runtime-main.js": "/pui-final-portfolio/static/js/runtime-main.81017b5e.js",
+    "runtime-main.js.map": "/pui-final-portfolio/static/js/runtime-main.81017b5e.js.map",
+    "static/css/2.4e27376e.chunk.css": "/pui-final-portfolio/static/css/2.4e27376e.chunk.css",
+    "static/js/2.68d23900.chunk.js": "/pui-final-portfolio/static/js/2.68d23900.chunk.js",
+    "static/js/2.68d23900.chunk.js.map": "/pui-final-portfolio/static/js/2.68d23900.chunk.js.map",
+    "static/js/3.578b063d.chunk.js": "/pui-final-portfolio/static/js/3.578b063d.chunk.js",
+    "static/js/3.578b063d.chunk.js.map": "/pui-final-portfolio/static/js/3.578b063d.chunk.js.map",
+    "index.html": "/pui-final-portfolio/index.html",
+    "static/css/2.4e27376e.chunk.css.map": "/pui-final-portfolio/static/css/2.4e27376e.chunk.css.map",
+    "static/css/main.5c842bf6.chunk.css.map": "/pui-final-portfolio/static/css/main.5c842bf6.chunk.css.map",
+    "static/js/2.68d23900.chunk.js.LICENSE.txt": "/pui-final-portfolio/static/js/2.68d23900.chunk.js.LICENSE.txt",
+    "static/media/Resume-YuwenLu.e855e167.pdf": "/pui-final-portfolio/static/media/Resume-YuwenLu.e855e167.pdf",
+    "static/media/arrow-back.d46eab4c.svg": "/pui-final-portfolio/static/media/arrow-back.d46eab4c.svg",
+    "static/media/email.70698e9e.svg": "/pui-final-portfolio/static/media/email.70698e9e.svg",
+    "static/media/github.5bcb0e2a.svg": "/pui-final-portfolio/static/media/github.5bcb0e2a.svg",
+    "static/media/goalplay-cat-lowres.ab304b08.png": "/pui-final-portfolio/static/media/goalplay-cat-lowres.ab304b08.png",
+    "static/media/goalplay-screenshot-homepage-lowres.359db63d.PNG": "/pui-final-portfolio/static/media/goalplay-screenshot-homepage-lowres.359db63d.PNG",
+    "static/media/instagram.956c2301.svg": "/pui-final-portfolio/static/media/instagram.956c2301.svg",
+    "static/media/linkedin.1970f940.svg": "/pui-final-portfolio/static/media/linkedin.1970f940.svg",
+    "static/media/location.79b68791.svg": "/pui-final-portfolio/static/media/location.79b68791.svg",
+    "static/media/personal-profile.e83295f2.jpg": "/pui-final-portfolio/static/media/personal-profile.e83295f2.jpg",
+    "static/media/twitter.ac55ca09.svg": "/pui-final-portfolio/static/media/twitter.ac55ca09.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.81017b5e.js",
+    "static/css/2.4e27376e.chunk.css",
+    "static/js/2.68d23900.chunk.js",
+    "static/css/main.5c842bf6.chunk.css",
+    "static/js/main.60989b75.chunk.js"
+  ]
+}
