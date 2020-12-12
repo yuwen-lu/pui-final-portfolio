@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #1C1E26;
+  color: rgba(255, 255, 255, 1);
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-size: 15pt;
+  font-weight: 100;
+  line-height: 2em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 576px) {
+  body {
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 2em;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a {
+  color: #E44C65;
+  text-decoration: none;
+  border-bottom: dotted 1px;
+  -moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+a:hover {
+  border-color: transparent;
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
+section {
+  margin: 10vh 0;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  margin: 1.8rem;
+}
+
+.nav-link:hover {
+  color: #E44C65;
+  text-decoration: none;
+  border-bottom: dotted 1px;
+}
+
+/* responsive nav bar */
+@media screen and (max-width: 576px) {
+  .nav-link {
+    padding: 0;
+    margin: 0.5rem;
+  }
+}
+
+.project-card-link {
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  -moz-transition: color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.project-card-link:hover {
+  color: #E44C65;
+  text-decoration: none;
+}
+
+
+.content-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 80vw;
+  margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.title {
+  font-size: 2.5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  line-height: 1.5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width: 576px) {
+  .title {
+    font-size: 1.5rem;
   }
 }

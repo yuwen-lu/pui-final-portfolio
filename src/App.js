@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Components } from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from "react-router-dom";
+import Projects from './pages/Projects';
+import Home from './pages/Home';
+import Life from './pages/Life';
+import Resume from './pages/Resume';
+import HitRanger from './pages/HitRanger';
+import Goalplay from './pages/Goalplay';
 
-function App() {
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
-export default App;
+    // Wrap everything in a React.Fragment because one component only allows one return component
+
+    <React.Fragment>
+      {/* the routes for different pages, <Link />s are in /layout/Header.js */}
+      <Route path="/projects">
+        <Projects />
+      </Route>
+
+      <Route path="/life">
+        <Life />
+      </Route>
+
+      <Route path="/resume">
+        <Resume />
+      </Route>
+
+      <Route path="/HitRanger">
+        <HitRanger />
+      </Route>
+
+      <Route path="/goalplay">
+        <Goalplay />
+      </Route>
+      
+      <Route exact path="/">
+        <Home />
+      </Route>
+    </React.Fragment>
+  )
+}
