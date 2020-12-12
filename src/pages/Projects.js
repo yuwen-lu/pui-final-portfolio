@@ -62,7 +62,12 @@ export default function Projects() {
                     </Col>
                 </Row>
                 <Row className="project-card-wrapper" style={projectCardWrapperStyle}>
-                    <Col sm={12} lg={6} style={colStyle}>
+                    <Col sm={12} lg={6} 
+                        style={colStyle}
+                        data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out">
                         <Link 
                             className="project-card-link" 
                             to="/Goalplay"
@@ -79,14 +84,15 @@ export default function Projects() {
                             />
                         </Link>
                     </Col>
-                    <Col sm={12} lg={6} style={colStyle}>
+                    <Col sm={12} lg={6} 
+                        style={colStyle}
+                        data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out">
                         <Link 
                             className="project-card-link" 
-                            to="/Goalplay"
-                            data-aos="fade-up"
-                            data-aos-offset="200"
-                            data-aos-duration="1000"
-                            data-aos-easing="ease-in-out">
+                            to="/Goalplay">
                             <ProjectCard 
                                 title="HIT Ranger" 
                                 description="Mobilizing Crowdwork with Task Management Interfaces" 
@@ -98,14 +104,15 @@ export default function Projects() {
                     </Col>
                 </Row>
                 <Row className="project-card-wrapper" style={projectCardWrapperStyle}>
-                    <Col sm={12} lg={6} style={colStyle}>
+                    <Col sm={12} lg={6} 
+                        style={colStyle}
+                        data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease-in-out">
                         <Link 
                             className="project-card-link" 
-                            to="/Goalplay"
-                            data-aos="fade-up"
-                            data-aos-offset="200"
-                            data-aos-duration="1000"
-                            data-aos-easing="ease-in-out">
+                            to="/Goalplay">
                             <ProjectCard 
                                 title="Embeded Interface Design" 
                                 description="Designing YouTube advertisement content to promote pro-social behaviors online" 
