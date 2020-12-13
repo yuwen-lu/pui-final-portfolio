@@ -52,6 +52,7 @@ export default function Home() {
                     data-aos-easing="ease-in-out">
                     <Col id="skill-cloud" style={iconCloudStyle} md={6} sm={10}>
                         <Particles
+                            height="15rem"
                             options={{
                                     "autoPlay": true,
                                     "detectRetina": true,
@@ -174,6 +175,26 @@ export default function Home() {
                                                 "sync": true
                                             }
                                         },
+                                        "collisions": {
+                                            "bounce": {
+                                                "horizontal": {
+                                                    "random": {
+                                                    "enable": false,
+                                                    "minimumValue": 0.1
+                                                },
+                                                "value": 1
+                                            },
+                                            "vertical": {
+                                                "random": {
+                                                    "enable": false,
+                                                    "minimumValue": 0.1
+                                                },
+                                                "value": 1
+                                            }
+                                            },
+                                            "enable": true,
+                                            "mode": "bounce"
+                                        },
                                         "move": {
                                             "angle": {
                                                 "offset": 45,
@@ -232,7 +253,7 @@ export default function Home() {
                                             "factor": 1000
                                             },
                                             "limit": 0,
-                                            "value": 80
+                                            "value": 60
                                         },
                                         "opacity": {
                                             "random": {
@@ -305,14 +326,6 @@ export default function Home() {
                                             "minimumValue": 1
                                             },
                                             "value": 10,
-                                            "animation": {
-                                            "destroy": "none",
-                                            "enable": false,
-                                            "minimumValue": 10,
-                                            "speed": 10,
-                                            "startValue": "max",
-                                            "sync": false
-                                            }
                                         },
                                     },
                                     "pauseOnBlur": true,
@@ -341,7 +354,7 @@ export default function Home() {
                                     "number": {
                                         "value": 15
                                     },
-                                    "line_linked": {
+                                    "link": {
                                         "enable": false
                                     },
                                     shape: {
@@ -366,6 +379,77 @@ export default function Home() {
                                                 "src": process.env.PUBLIC_URL + "/icons/weibo.svg",
                                             },
                                         ]
+                                    },
+                                    "move": {
+                                        "angle": {
+                                            "offset": 45,
+                                            "value": 90
+                                        },
+                                        "attract": {
+                                            "enable": false,
+                                            "rotate": {
+                                                "x": 600,
+                                                "y": 1200
+                                            }
+                                        },
+                                        "direction": "none",
+                                        "distance": 0,
+                                        "enable": true,
+                                        "gravity": {
+                                            "acceleration": 9.81,
+                                            "enable": false,
+                                            "maxSpeed": 50
+                                        },
+                                        "noise": {
+                                            "delay": {
+                                                "random": {
+                                                "enable": false,
+                                                "minimumValue": 0
+                                                },
+                                                "value": 0
+                                            },
+                                            "enable": false
+                                        },
+                                        "outModes": {
+                                            "default": "out",
+                                            "bottom": "out",
+                                            "left": "out",
+                                            "right": "out",
+                                            "top": "out"
+                                        },
+                                        "random": false,
+                                        "size": false,
+                                        "speed": 1,
+                                        "straight": false,
+                                        "trail": {
+                                            "enable": false,
+                                            "length": 10,
+                                            "fillColor": {
+                                                "value": "#000000"
+                                            }
+                                        },
+                                        "vibrate": false,
+                                        "warp": false
+                                    },
+                                    "collisions": {
+                                        "bounce": {
+                                            "horizontal": {
+                                                "random": {
+                                                "enable": false,
+                                                "minimumValue": 0.1
+                                            },
+                                            "value": 1
+                                        },
+                                        "vertical": {
+                                            "random": {
+                                                "enable": false,
+                                                "minimumValue": 0.1
+                                            },
+                                            "value": 1
+                                        }
+                                        },
+                                        "enable": true,
+                                        "mode": "bounce"
                                     },
                                     "size": {
                                         "value": 30,
@@ -451,7 +535,7 @@ const experienceTextForPhoneStyle = {
 }
 
 const iconCloudStyle = {
-    height: "20rem",
+    height: "18rem",
     backgroundColor: "rgba(49, 52, 66, 21)",
     borderRadius: "1rem",
     padding: "1rem",
