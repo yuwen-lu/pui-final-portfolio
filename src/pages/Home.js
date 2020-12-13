@@ -19,10 +19,11 @@ export default function Home() {
     AOS.init();
 
     // responsiveness
-    const isNotPhone = useMediaQuery({
-        query: '(min-width: 576px)'
+    const isDesktop = useMediaQuery({
+        query: '(min-width: 769px)'
     });
 
+    console.log(isDesktop);
     return (
         <React.Fragment>
             <Header />
@@ -33,14 +34,14 @@ export default function Home() {
                     data-aos="fade-in" 
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-out">
-                    <Col className="text-column" style={isNotPhone ? introductionNotPhoneStyle : introductionForPhoneStyle} md={6} sm={10}>
+                    <Col className="text-column" style={isDesktop ? introductionDesktopStyle : introductionNotDesktopStyle} lg={6} md={10} sm={10}>
                         <p className="title">Hi there! I'm Yuwen.</p>
                         <p>I am a <a target="_blank" href={"https://www.hcii.cmu.edu/academics/mhci"}>Master of Human-Computer Interaction</a> student at Human-Computer Interaction Institute, Carnegie Mellon University.</p>
                         <p>I'm an aspired Social Media researcher and UX practitioner.</p>
                         <p>Jump to my <Link to="/projects">Projects</Link> or my <Link to="/resume">Resume</Link>.</p>
                     </Col>
-                    <Col className="profile-pic-container" style={profilePicContainerStyle} md={6} sm={10}>
-                        <img className="profile-pic" style={isNotPhone ? profilePicNotPhoneStyle : profilePicForPhoneStyle} src={ProfilePic} alt="Me"></img>
+                    <Col className="profile-pic-container" style={profilePicContainerStyle} lg={6} md={10} sm={10}>
+                        <img className="profile-pic" style={isDesktop ? profilePicDesktopStyle : profilePicNotDesktopStyle} src={ProfilePic} alt="Me"></img>
                     </Col>
                 </Row>
                 <Row 
@@ -50,7 +51,7 @@ export default function Home() {
                     data-aos-offset="200"
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-out">
-                    <Col id="skill-cloud" style={iconCloudStyle} md={6} sm={10}>
+                    <Col id="skill-cloud" style={iconCloudStyle} lg={6} md={10} sm={10}>
                         <Particles
                             height="15rem"
                             options={{
@@ -341,7 +342,7 @@ export default function Home() {
                                 }}
                             />
                     </Col>
-                    <Col className="text-column" style={isNotPhone? experienceTextNotPhoneStyle : experienceTextForPhoneStyle} md={6} sm={10}>
+                    <Col className="text-column" style={isDesktop? experienceTextDesktopStyle : experienceTextNotDesktopStyle} lg={6} md={10} sm={10}>
                         <p>
                             Previously, I worked with Professor <a href={"https://www.ics.uci.edu/~gmark/Home_page/Welcome.html"}>Gloria Mark</a> at the University of California, Irvine and <a href={"https://acw.io/"}>Alex Williams</a> at the University of Tennessee, Knoxville as undergraduate research assistant. 
                         </p>
@@ -476,7 +477,7 @@ export default function Home() {
                                         "random": false,
                                         "anim": {
                                             "enable": true,
-                                            "speed": 1,
+                                            "speed": 2,
                                             "size_min": 20,
                                             "sync": false
                                         }
@@ -485,7 +486,7 @@ export default function Home() {
                             }}    
                         />
                     </Col>
-                    <Col className="text-column" style={isNotPhone? experienceTextNotPhoneStyle : experienceTextForPhoneStyle} md={{ span: 6, order: 1 }} sm={10}>
+                    <Col className="text-column" style={isDesktop? experienceTextDesktopStyle : experienceTextNotDesktopStyle} md={{ span: 6, order: 1 }} sm={10}>
                         My research interest is broadly in <strong>Social Computing</strong>. I seize to use mixed method research to <strong>understand people’s behavior</strong> at scale on social media platforms, and use UX design principles and programming to <strong>improve existing platforms</strong> and promote pro-social outcomes.
                     </Col>
                 </Row>
@@ -506,7 +507,7 @@ const contentRowStyle = {
     margin: "auto",
 }
 
-const introductionNotPhoneStyle = {
+const introductionDesktopStyle = {
     paddingTop: "5rem",
     textAlign: "right",
     fontSize: "1.3rem",
@@ -515,7 +516,7 @@ const introductionNotPhoneStyle = {
     justifyContent: "space-evenly"
 }
 
-const introductionForPhoneStyle = {
+const introductionNotDesktopStyle = {
     textAlign: "right",
     fontSize: "1rem",
     display: "flex",
@@ -530,26 +531,26 @@ const profilePicContainerStyle = {
     padding: "2rem"
 }
 
-const profilePicNotPhoneStyle = {
+const profilePicDesktopStyle = {
     borderRadius: "100%",
     display: "block",
     width: "22vw",
     margin: "auto"
 }
 
-const profilePicForPhoneStyle = {
+const profilePicNotDesktopStyle = {
     borderRadius: "100%",
     display: "block",
     width: "30vw",
     margin: "auto auto 2rem auto"
 }
 
-const experienceTextNotPhoneStyle = {
+const experienceTextDesktopStyle = {
     margin: "5rem auto",
     padding: "2.5rem",
 }
 
-const experienceTextForPhoneStyle = {
+const experienceTextNotDesktopStyle = {
     fontSize: "16px",
     margin: "2.5rem auto",
 }
