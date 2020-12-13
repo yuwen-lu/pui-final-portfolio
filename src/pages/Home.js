@@ -248,12 +248,12 @@ export default function Home() {
                                         },
                                         "number": {
                                             "density": {
-                                            "enable": true,
-                                            "area": 800,
-                                            "factor": 1000
+                                                "enable": true,
+                                                "area": 800,
+                                                "factor": 1000
                                             },
                                             "limit": 0,
-                                            "value": 60
+                                            "value": 40
                                         },
                                         "opacity": {
                                             "random": {
@@ -268,7 +268,7 @@ export default function Home() {
                                             "sync": false
                                             }
                                         },
-                                        "reduceDuplicates": false,
+                                        "reduceDuplicates": true,
                                         "rotate": {
                                             "random": {
                                             "enable": false,
@@ -296,27 +296,35 @@ export default function Home() {
                                         },
                                         "shape": {
                                             "options": {
-                                            "character": {
-                                                "value": [
-                                                "Design",
-                                                "Programming",
-                                                "Research"
-                                                ],
-                                                "font": "Roboto",
-                                                "style": "",
-                                                "weight": "400",
-                                                "fill": true
-                                            },
-                                            //   "image": {
-                                            //     "src": "https://cdn.matteobruni.it/images/particles/github.svg",
-                                            //     "width": 100,
-                                            //     "height": 100
-                                            //   },
-                                            //   "images": {
-                                            //     "src": "https://cdn.matteobruni.it/images/particles/github.svg",
-                                            //     "width": 100,
-                                            //     "height": 100
-                                            //   }
+                                                "character": {
+                                                    "value": [
+                                                        "Design",
+                                                        "Programming",
+                                                        "Research",
+                                                        "Contextual Inquiry",
+                                                        "Usability Heuristics",
+                                                        "Human-Centered",
+                                                        "Agile Development",
+                                                        "Think Aloud",
+                                                        "Speed Dating",
+                                                        "Storyboard",
+                                                        "Physical Prototype",
+                                                        "Figma",
+                                                        "Indesign",
+                                                        "React",
+                                                        "JavaScript",
+                                                        "Python",
+                                                        "HTML",
+                                                        "CSS",
+                                                        "Sentiment Analysis",
+                                                        "VADER",
+                                                        "LIWC"
+                                                    ],
+                                                    "font": "Roboto",
+                                                    "style": "",
+                                                    "weight": "400",
+                                                    "fill": true
+                                                },
                                             },
                                             "type": "char"
                                         },
@@ -335,7 +343,13 @@ export default function Home() {
                     </Col>
                     <Col className="text-column" style={isNotPhone? experienceTextNotPhoneStyle : experienceTextForPhoneStyle} md={6} sm={10}>
                         <p>
-                        Previously, I worked with Professor <a href={"https://www.ics.uci.edu/~gmark/Home_page/Welcome.html"}>Gloria Mark</a> at the University of California, Irvine and <a href={"https://acw.io/"}>Alex Williams</a> at the University of Tennessee, Knoxville as undergraduate research assistant. See my <Link to="/projects">projects</Link> here.
+                            Previously, I worked with Professor <a href={"https://www.ics.uci.edu/~gmark/Home_page/Welcome.html"}>Gloria Mark</a> at the University of California, Irvine and <a href={"https://acw.io/"}>Alex Williams</a> at the University of Tennessee, Knoxville as undergraduate research assistant. 
+                        </p>
+                        <p>
+                            I have experience across Programming, Interaction design and User Behaviroal Research.
+                        </p>
+                        <p>
+                            See my <Link to="/projects">projects</Link> here.
                         </p>
                     </Col>
                 </Row>
@@ -352,7 +366,13 @@ export default function Home() {
                             params={{
                                 particles: {
                                     "number": {
-                                        "value": 15
+                                        "density": {
+                                            "enable": true,
+                                            "area": 800,
+                                            "factor": 1000
+                                        },
+                                        "limit": 0,
+                                        "value": 100
                                     },
                                     "link": {
                                         "enable": false
