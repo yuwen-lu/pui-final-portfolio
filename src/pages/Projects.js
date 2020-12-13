@@ -75,7 +75,7 @@ export default function Projects() {
                             description="Personal iOS training APP for amateur goalkeepers with Augmented Reality and Machine Learning" 
                             job="iOS Developer, Usability Manager" 
                             time= "2019" 
-                            bgImage= {process.env.PUBLIC_URL + "/images/hit-ranger-icon.png"}
+                            bgImage= {process.env.PUBLIC_URL + "/images/goalplay-screenshot-homepage-lowres.PNG"}
                             />
                         </Link>
                     </Col>
@@ -93,7 +93,7 @@ export default function Projects() {
                                 description="Mobilizing Crowdwork with Task Management Interfaces" 
                                 job="Developer" 
                                 time= "Target Venue: CSCW 2021" 
-                                bgImage= {process.env.PUBLIC_URL + "/images/goalplay-screenshot-homepage-lowres.png"}
+                                bgImage= {process.env.PUBLIC_URL + "/images/hit-ranger-icon.png"}
                             />
                         </Link>
                     </Col>
