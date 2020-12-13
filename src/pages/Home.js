@@ -27,13 +27,16 @@ export default function Home() {
     return (
         <React.Fragment>
             <Header />
+            {/* Container component from react-bootstrap, wrapping around Rows and Cols for responsive layout */}
             <Container>
                 <Row 
                     id="introduction" 
                     style={rowStyle} 
+                    // add animation on scroll effects
                     data-aos="fade-in" 
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-out">
+                    {/* style attribute: choose style sheets accordingly for different responsive layout */}
                     <Col className="text-column" style={isDesktop ? introductionDesktopStyle : introductionNotDesktopStyle} lg={6} md={10} sm={10}>
                         <p className="title">Hi there! I'm Yuwen.</p>
                         <p>I am a <a target="_blank" href={"https://www.hcii.cmu.edu/academics/mhci"}>Master of Human-Computer Interaction</a> student at Human-Computer Interaction Institute, Carnegie Mellon University.</p>
@@ -52,6 +55,7 @@ export default function Home() {
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-out">
                     <Col id="skill-cloud" style={iconCloudStyle} lg={6} md={10} sm={10}>
+                        {/* particles using tsparticles library */}
                         <Particles
                             height="15rem"
                             options={{
@@ -298,6 +302,7 @@ export default function Home() {
                                         "shape": {
                                             "options": {
                                                 "character": {
+                                                    // content of the particle nodes
                                                     "value": [
                                                         "Design",
                                                         "Programming",
@@ -362,6 +367,7 @@ export default function Home() {
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-out">
                     <Col id="social-media-icon-cloud" style={iconCloudStyle} md={{ span: 6, order: 2 }} sm={10}>
+                        {/* particles using tsparticles library */}
                         <Particles 
                             height="15rem"
                             params={{
@@ -380,6 +386,7 @@ export default function Home() {
                                     },
                                     shape: {
                                         type: 'image',
+                                        // content of the particle nodes
                                         "image": [
                                             {
                                                 "src": process.env.PUBLIC_URL + "/icons/github.svg",
@@ -495,6 +502,8 @@ export default function Home() {
         </React.Fragment>
     )
 }
+
+// style sheets
 
 const rowStyle = {
     display: "flex",

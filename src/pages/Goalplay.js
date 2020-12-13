@@ -23,16 +23,18 @@ export default function Goalplay() {
     return (
         <React.Fragment>
             <Header />
+            {/* back button on all content pages */}
             <div className="back-button-container" style={backButtonContainerStyle}>
                 <Link to="/Projects">
                     <img src={BackButton} style={backIconStyle}></img>Back
                 </Link>
             </div>
+            {/* Container Componet from react-bootstrap, containing Rows and Cols for responsiveness */}
             <Container style={projectPageContainerStyle}>
-                
                 {/* the p tag needs a container, otherwise the width of p tag would be the same as the parent tag */}
                 <div className="title-wrapper" style={titleWrapperStyle}><p className="title" style={projectTitleStyle}>Goalplay Video Coach</p></div>
                 <Row>
+                    {/* bootstrap column for responsive layout, break at tablet --> desktop */}
                     <Col style={isDesktop ? colStyleForDesktop : colStyleNotDesktop} lg={6} md={12} sm={12}>
                     <p>An AI-powered video coaching APP designed for amateur soccer goalkeepers without access to professional training resources.</p>
                     <p>Our project collaborates with real industry client, <a target="_blank" href="https://www.goalplay.com/en/">Goalplay GmbH &amp; Co. KG</a>, as part of the iOS practicum course at Technical University of Munich ( <a target="_blank" href="https://ase.in.tum.de/lehrstuhl_1/people/people-archive/123-teaching/st19/1037-ipraktikum-ss19">iPraktikum 2019</a> ). Goalplay is a company that combines the latest technology and the goalkeeper training founded by the legendary German goalkeeper <a target="_blank" href="https://en.wikipedia.org/wiki/Oliver_Kahn">Oliver Kahn</a>.</p>
@@ -44,6 +46,7 @@ export default function Goalplay() {
                     </Col>
                 </Row>
                 <Row
+                    // add animation on scroll effects
                     data-aos="fade-up"
                     data-aos-offset="200"
                     data-aos-duration="1000"
@@ -87,6 +90,8 @@ export default function Goalplay() {
         </React.Fragment>
     )
 }
+
+// style sheets
 
 // set width for the bootstrap container
 const projectPageContainerStyle = {

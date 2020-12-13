@@ -4,6 +4,8 @@ import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 import BackButton from '../resources/icons/arrow-back.svg';
 
+// THIS PAGE IS STILL UNDER DEVELOPMENT, STILL NEEDS CONTENT TO ADD
+
 export default function HitRanger() {
     return (
         <React.Fragment>

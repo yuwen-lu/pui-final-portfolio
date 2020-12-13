@@ -6,7 +6,9 @@ import LocationIcon from '../resources/icons/location.svg';
 import { Container, Row, Col } from 'react-bootstrap';
 import { useMediaQuery } from 'react-responsive';
 
-export default function HitRanger() {
+
+// functional component for Life page
+export default function Life() {
 
     // responsiveness, hide left column if on phone
     const isNotPhone = useMediaQuery({
@@ -20,6 +22,7 @@ export default function HitRanger() {
                 {/* the p tag needs a container, otherwise the width of p tag would be the same as the parent tag */}
                 <div className="title-wrapper" style={titleWrapperStyle}><p className="title" style={projectTitleStyle}>Life Events</p></div>
                 <Row>
+                    {/* hide left column on phone for responsive layout */}
                     {isNotPhone && <Col style={topLeftColStyle}></Col>}
                     <Col style={rightColStyle}></Col>
                 </Row>
@@ -27,16 +30,21 @@ export default function HitRanger() {
                     data-aos-offset="200"
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-out">
+                    {/* hide left column on phone for responsive layout */}
+                    {/* Left column: location icon and text */}
                     {isNotPhone && <Col style={leftColStyle}>
                         <div style={locationColWrapperStyle}>
                             <img src={LocationIcon} style={locationIconStyle}></img>
                             Pittsburgh, PA
                         </div>
                     </Col>}
+                    {/* right column: detailed description for the event */}
                     <Col style={rightColStyle}>
+                        {/* time of the event */}
                         <div style={dateWrapperStyle}>
                             <p style={dateStyle}>Aug 2020</p>
                         </div>
+                        {/* what actually happened */}
                         <p style={lifeEventContentStyle}>
                             Left California,<br></br>
                             Started grad school<br></br>
@@ -48,6 +56,7 @@ export default function HitRanger() {
                     data-aos-offset="200"
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-out">
+                    {/* hide left column on phone for responsive layout */}
                     {isNotPhone && <Col style={leftColStyle}>
                         <div style={locationColWrapperStyle}>
                             <img src={LocationIcon} style={locationIconStyle}></img>
@@ -69,6 +78,7 @@ export default function HitRanger() {
                     data-aos-offset="200"
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-out">
+                    {/* hide left column on phone for responsive layout */}
                     {isNotPhone && <Col style={leftColStyle}>
                         <div style={locationColWrapperStyle}>
                             {/* <img src={LocationIcon} style={locationIconStyle}></img>
@@ -89,6 +99,7 @@ export default function HitRanger() {
                     data-aos-offset="200"
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-out">
+                    {/* hide left column on phone for responsive layout */}
                     {isNotPhone && <Col style={leftColStyle}>
                         <div style={locationColWrapperStyle}>
                             <img src={LocationIcon} style={locationIconStyle}></img>
@@ -109,6 +120,7 @@ export default function HitRanger() {
                     data-aos-offset="200"
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-out">
+                    {/* hide left column on phone for responsive layout */}
                     {isNotPhone && <Col style={leftColStyle}>
                         <div style={locationColWrapperStyle}>
                             <img src={LocationIcon} style={locationIconStyle}></img>
@@ -129,6 +141,7 @@ export default function HitRanger() {
                     data-aos-offset="200"
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-out">
+                    {/* hide left column on phone for responsive layout */}
                     {isNotPhone && <Col style={leftColStyle}>
                         <div style={locationColWrapperStyle}>
                             <img src={LocationIcon} style={locationIconStyle}></img>
@@ -148,6 +161,7 @@ export default function HitRanger() {
                     data-aos-offset="200"
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-out">
+                    {/* hide left column on phone for responsive layout */}
                     {isNotPhone && <Col style={leftColStyle}>
                         <div style={locationColWrapperStyle}>
                             {/* <img src={LocationIcon} style={locationIconStyle}></img>
@@ -168,6 +182,7 @@ export default function HitRanger() {
                     data-aos-offset="200"
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-out">
+                    {/* hide left column on phone for responsive layout */}
                     {isNotPhone && <Col style={leftColStyle}>
                         <div style={locationColWrapperStyle}>
                             <img src={LocationIcon} style={locationIconStyle}></img>
@@ -188,6 +203,7 @@ export default function HitRanger() {
                     data-aos-offset="200"
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-out">
+                    {/* hide left column on phone for responsive layout */}
                     {isNotPhone && <Col style={leftColStyle}>
                         <div style={locationColWrapperStyle}>
                             <img src={LocationIcon} style={locationIconStyle}></img>
@@ -216,6 +232,8 @@ export default function HitRanger() {
         </React.Fragment>
     )
 }
+
+// style sheets
 
 // // set width for the bootstrap container
 // const projectPageContainerStyle = {
