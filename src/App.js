@@ -1,8 +1,7 @@
-import React, { Components } from 'react';
+import React from 'react';
 import {
-  BrowserRouter as Router,
+  // BrowserRouter as Router,
   Route,
-  Link
 } from "react-router-dom";
 import Projects from './pages/Projects';
 import Home from './pages/Home';
@@ -15,7 +14,7 @@ import Goalplay from './pages/Goalplay';
 export default function App() {
   return (
 
-    // Wrap everything in a React.Fragment because one component only allows one return component
+    // Wrap everything in a React.Fragment because one component only allows one returning component
 
     <React.Fragment>
       {/* the routes for different pages, <Link />s are in /layout/Header.js */}
@@ -38,6 +37,8 @@ export default function App() {
       <Route path="/goalplay">
         <Goalplay />
       </Route>
+
+      {/* Will add more here later with more content pages */}
       
       <Route exact path="/">
         <Home />

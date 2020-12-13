@@ -8,6 +8,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
+    {/* add the basename here for public hosting */}
     <Router basename={process.env.PUBLIC_URL}>
       <App />
     </Router>

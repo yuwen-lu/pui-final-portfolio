@@ -1,23 +1,29 @@
 import React from 'react';
-import { Route, Link } from 'react-router-dom';
+// import { Route, Link } from 'react-router-dom';
+import { useMediaQuery } from 'react-responsive';
 import EmailIcon from '../resources/icons/email.svg';
 import GithubIcon from '../resources/icons/github.svg';
 import InstagramIcon from '../resources/icons/instagram.svg';
 import LinkedinIcon from '../resources/icons/linkedin.svg';
 import TwitterIcon from '../resources/icons/twitter.svg';
 
-
+// function component for footer, used across (almost?) all pages
 export default function Footer () {
+
+    // responsiveness, break point at tablet --> desktop
+    const isDesktop = useMediaQuery({
+        query: '(min-width: 769px)'
+    });
 
     return (
         <div className="footerContainer" style={footerContainerStyle}>
             <p>Contact</p>
             <div className="footerIcons">
-                <a target="_blank" href={"mailto:yuwenlu@andrew.cmu.edu"} style={iconLinkStyle}><img src={EmailIcon} style={iconStyle}></img></a>
-                <a target="_blank" href={"https://twitter.com/yuwen_lu_"} style={iconLinkStyle}><img src={TwitterIcon} style={iconStyle}></img></a>
-                <a target="_blank" href={"https://www.instagram.com/yuwen_lu_/"} style={iconLinkStyle}><img src={InstagramIcon} style={iconStyle}></img></a>
-                <a target="_blank" href={"https://github.com/yuwen-lu/"} style={iconLinkStyle}><img src={GithubIcon} style={iconStyle}></img></a>
-                <a target="_blank" href={"https://www.linkedin.com/in/yuwen-lu/"} style={iconLinkStyle}><img src={LinkedinIcon} style={iconStyle}></img></a>
+                <a target="_blank" href={"mailto:yuwenlu@andrew.cmu.edu"} style={iconLinkStyle}><img src={EmailIcon} style={isDesktop? iconStyleForDesktop : iconStyleNotDesktop}></img></a>
+                <a target="_blank" href={"https://twitter.com/yuwen_lu_"} style={iconLinkStyle}><img src={TwitterIcon} style={isDesktop? iconStyleForDesktop : iconStyleNotDesktop}></img></a>
+                <a target="_blank" href={"https://www.instagram.com/yuwen_lu_/"} style={iconLinkStyle}><img src={InstagramIcon} style={isDesktop? iconStyleForDesktop : iconStyleNotDesktop}></img></a>
+                <a target="_blank" href={"https://github.com/yuwen-lu/"} style={iconLinkStyle}><img src={GithubIcon} style={isDesktop? iconStyleForDesktop : iconStyleNotDesktop}></img></a>
+                <a target="_blank" href={"https://www.linkedin.com/in/yuwen-lu/"} style={iconLinkStyle}><img src={LinkedinIcon} style={isDesktop? iconStyleForDesktop : iconStyleNotDesktop}></img></a>
             </div>
             <p style={footerBottomTextStyle}>Design and developed by Yuwen Lu with React.</p>
             <p style={footerBottomTextStyle}>Last updated: Dec 2020</p>
@@ -31,9 +37,14 @@ const footerContainerStyle = {
     marginTop: "10rem"
 }
 
-const iconStyle = {
+const iconStyleForDesktop = {
     width: "1.8rem",
     margin: "1rem 1rem 3rem",
+}
+
+const iconStyleNotDesktop = {
+    width: "1.2rem",
+    margin: "0.5rem 0.5rem 2rem",
 }
 
 const iconLinkStyle = {

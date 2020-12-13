@@ -1,5 +1,7 @@
+/* import the Roboto font from google fonts */
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
 
+/* global stylesheets */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,7 +17,8 @@ body {
   line-height: 2em;
 }
 
-@media screen and (max-width: 576px) {
+/* change some settings for mobile and tablet */
+@media screen and (max-width: 769px) {
   body {
     font-size: 15px;
     font-weight: 200;
@@ -23,6 +26,7 @@ body {
   }
 }
 
+/* style sheet for links, with hover transition effect */
 a {
   color: #E44C65;
   text-decoration: none;
@@ -41,10 +45,7 @@ p {
   margin-bottom: 2rem;
 }
 
-section {
-  margin: 10vh 0;
-}
-
+/* change style sheet for navbar since I don't want the color there. I will need to flip the hover effect */
 .nav-link {
   color: #fff;
   text-decoration: none;
@@ -66,6 +67,7 @@ section {
   }
 }
 
+/* similar to nav-link, flip the hover effect */
 .project-card-link {
   color: #fff;
   text-decoration: none;
